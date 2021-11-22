@@ -1,0 +1,95 @@
+.result-container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 50px;
+  .title {
+    text-align: center;
+    color: #fff;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #a6a6a6, #313131);
+    border-radius: 10px;
+  }
+  .selected-data {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    @media screen and (max-width: 967px) {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column-reverse;
+    }
+    .app-image {
+      margin-right: 35px;
+      @media screen and (max-width: 967px) {
+        margin-right: 0;
+      }
+      img {
+        width: 220px;
+        height: 220px;
+        border-radius: 20px;
+        object-fit: contain;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      }
+    }
+    .app-data {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 15px 0px;
+      .app-data-title {
+        font-size: 25px;
+        margin-bottom: 5px;
+      }
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+  .selected-screenshots {
+    display: flex;
+    flex-direction: column;
+    h3 {
+      border-bottom: 1px solid #a0a0a0;
+    }
+    .screenshot {
+      display: flex;
+      flex-wrap: wrap;
+      img {
+        object-fit: cover;
+        height: 300px;
+        width: 170px;
+        margin: 7px;
+        border-radius: 7px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        @media screen and (max-width: 967px) {
+          height: 220px;
+          width: 110px;
+        }
+      }
+    }
+  }
+  .back-home {
+    width: 100%;
+    margin-top: 50px;
+    .result-btn {
+      width: 175px;
+      height: 50px;
+      border: none;
+      border-radius: 25px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      font-weight: bold;
+      background: linear-gradient(to right, #a6a6a6, #313131);
+      cursor: pointer;
+      color: #fff;
+    }
+    @media screen and (max-width: 967px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
